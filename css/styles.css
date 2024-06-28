@@ -1,0 +1,563 @@
+/* Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #e9ecef;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+header.hero-section {
+    background: linear-gradient(to right, #1c8adb, #1e3799);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    clip-path: ellipse(75% 100% at 50% 0%);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+    background: #fff;
+    color: #1c8adb;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 5px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-buttons .btn:hover {
+    background: #1c8adb;
+    color: #fff;
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: #fff;
+    color: #1c8adb;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+}
+
+section + section {
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #1e3799;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #3498db;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features-section {
+    padding-top: 70px; /* Add padding to separate from navbar */
+}
+
+.features-section .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery {
+    padding-top: 5rem; /* Adjust this value as needed */
+}
+
+.gallery-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.gallery-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #3498db; /* Changed to a specific color */
+}
+
+.gallery-item p {
+    font-size: 1rem;
+    color: #333; /* Changed to a specific color */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding-top: 70px; /* Add padding to separate from navbar */
+    background: #f9f9f9; /* Add a light background color for contrast */
+}
+
+.testimonials-section h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #1e3799;
+    position: relative;
+}
+
+.testimonials-section h2::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #3498db;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.testimonials-section .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial {
+    flex: 1 1 300px; /* Slightly wider flex basis for better layout */
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial::before {
+    content: '“';
+    font-size: 3rem;
+    color: #1c8adb;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+.testimonial::after {
+    content: '”';
+    font-size: 3rem;
+    color: #1c8adb;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.testimonial span {
+    display: block;
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Media Queries for Testimonials Section */
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Pricing Section */
+.pricing-section {
+    padding-top: 70px; /* Add padding to separate from navbar */
+    background: #f9f9f9; /* Light background color for contrast */
+}
+
+.pricing-section h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #1e3799;
+    text-align: center;
+}
+
+.pricing-section .pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.plan {
+    flex: 1 1 300px; /* Slightly wider flex basis for better layout */
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.plan .price {
+    font-size: 2rem;
+    color: #1c8adb;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.plan ul li::before {
+    content: '✔';
+    color: #1c8adb;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.plan .btn {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.plan .btn:hover {
+    background: #1e3799;
+}
+
+/* Media Queries for Pricing Section */
+@media (max-width: 768px) {
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Contact Section */
+.contact-section {
+    padding-top: 70px; /* Add padding to separate from navbar */
+}
+
+.contact-section .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #3498db;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #e67e22;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .features, .gallery, .testimonials, .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature, .plan, .testimonial, .gallery-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .cta-buttons .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .features, .gallery, .testimonials, .pricing-plans {
+        gap: 10px;
+    }
+
+    .feature, .plan, .testimonial, .gallery-item {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .contact-section .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
